@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EqChartView">
+        <attr name="canvas_custom" format="reference" />
+        <attr name="canvas_bg" format="color" />
+        <attr name="points_new_bg" format="reference" />
+        <attr name="points_bg" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    tools:context="com.wenx.simple.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_test"
+        android:onClick="click1027"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_test_shape_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eq_view"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_axisx_value"
+        android:hint="X轴坐标文字, 用逗号分开"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/eq_view"/>
+    <EditText
+        android:id="@+id/et_axisy_value"
+        android:hint="y轴坐标文字, 用逗号分开"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_axisx_value"/>
+
+    <Button
+        android:text="发送"
+        android:id="@+id/btn_set_axis_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_axisy_value" />
+
+    <Button
+        android:id="@+id/btn_set_bond_type"
+        android:text="设置边距删除"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_axis_value"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_set_new_point"/>
+    <Button
+        android:id="@+id/btn_set_new_point"
+        android:text="设置新点图片"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_axis_value"
+        app:layout_constraintLeft_toRightOf="@+id/btn_set_bond_type"
+        app:layout_constraintRight_toLeftOf="@+id/btn_set_point"/>
+    <Button
+        android:id="@+id/btn_set_point"
+        android:text="设置点图片"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_axis_value"
+        app:layout_constraintLeft_toRightOf="@+id/btn_set_new_point"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_set_random_data"
+        android:text="设置随机参数"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toLeftOf="@+id/btn_set_bg_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_bond_type"/>
+    <Button
+        android:id="@+id/btn_set_bg_color"
+        android:text="设置背景颜色"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_set_random_data"
+        app:layout_constraintRight_toLeftOf="@+id/btn_set_bg_custom"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_bond_type" />
+    <Button
+        android:id="@+id/btn_set_bg_custom"
+        android:text="设置背景自定义"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_bond_type"
+        app:layout_constraintLeft_toRightOf="@+id/btn_set_bg_color"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <com.wenx.eqviews.EqChartView
+        android:id="@+id/eq_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <com.wenx.eqviews.SlideView
+            android:id="@+id/chart_view_1"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_chartview_64"/>
+<!--        <com.wenxiong.eqviews.SlideView-->
+<!--            android:id="@+id/chart_view_2"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_chartview_32"/>-->
+
+<!--        <com.wenxiong.eqviews.SlideView-->
+<!--            android:id="@+id/chart_view_3"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_chartview_33"/>-->
+<!--        <com.wenxiong.eqviews.SlideView-->
+<!--            android:id="@+id/chart_view_4"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_chartview_34"/>-->
+<!--        <com.wenxiong.eqviews.SlideView-->
+<!--            android:id="@+id/chart_view_5"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_chartview_35"/>-->
+<!--        <com.wenxiong.eqviews.SlideView-->
+<!--            android:id="@+id/chart_view_6"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_chartview_36"/>-->
+<!--        <com.wenxiong.eqviews.SlideView-->
+<!--            android:id="@+id/chart_view_7"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_chartview_37"/>-->
+<!--        <com.wenxiong.eqviews.SlideView-->
+<!--            android:id="@+id/chart_view_8"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_chartview_38"/>-->
+<!--        <com.wenxiong.eqviews.SlideView-->
+<!--            android:id="@+id/chart_view_9"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_chartview_39"/>-->
+        <com.wenx.eqviews.SlideView
+            android:id="@+id/chart_view_10"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_chartview_64"/>
+    </com.wenx.eqviews.EqChartView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
