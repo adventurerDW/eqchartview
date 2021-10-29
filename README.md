@@ -8,6 +8,10 @@ allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
+			//如果不行试试这个
+			maven { url 'https://www.jitpack.io' }
+			//如果不行试试这个
+			maven { url 'http://jitpack.io' }
 		}
 }
 
