@@ -18,7 +18,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2960add1-5517-4332-8dd2-064b9a332c2e" name="Default Changelist" comment="created" />
+    <list default="true" id="2960add1-5517-4332-8dd2-064b9a332c2e" name="Default Changelist" comment="2021年10月29日10:56:19">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____simple_libs_eqchart_debug_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/eqchart/eqchartview.eqchart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/eqchart/eqchartview.eqchart.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/simple/eqchartview.simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/simple/eqchartview.simple.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqchart/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eqchart/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqchart/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/eqchart/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/simple/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,11 +37,33 @@
       <option value="directory" />
     </option>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@192.168.0.149:12315]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@4f53c6ac]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="eqchartview" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="eqchartview" type="f1a62948:ProjectNode" />
+                <item name="eqchart" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -52,14 +82,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/simple/libs" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
   <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Default Config" />
+    <option name="MODULE_TAB" value="Signing Configs" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\mylibrary\github\eqchartview\simple\libs" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -144,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635411090580</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created">
+      <created>1635413639725</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1635413639725</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,20 +204,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created" />
-    <option name="LAST_COMMIT_MESSAGE" value="created" />
+    <MESSAGE value="2021年10月29日10:56:19" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021年10月29日10:56:19" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="286" key="#PSD" timestamp="1635410261611">
+    <state x="484" y="286" key="#PSD" timestamp="1635473070229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="484" y="286" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1635410261611" />
-    <state x="523" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635410211091">
+    <state x="484" y="286" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1635473070229" />
+    <state x="523" y="126" width="1092" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635473070706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="523" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635410211091" />
+    <state x="523" y="126" width="1092" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635473070706" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1635475416385">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1635475416385" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1635411933569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1635411933569" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1635475409832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1635475409832" />
   </component>
 </project>

@@ -7,6 +7,29 @@ android {
         minSdkVersion 19
         versionCode 1
         versionName "1.0.1"
+
+        signingConfigs {
+            release {
+                storePassword 'zqw123'
+                keyAlias 'key0'
+                keyPassword 'zqw123'
+                storeFile file('E:\\keystore\\eqchartview.jks')
+            }
+            debug {
+                storeFile file('E:\\keystore\\eqchartview.jks')
+                storePassword 'zqw123'
+                keyAlias 'key0'
+                keyPassword 'zqw123'
+            }
+        }
+        signingConfig signingConfigs.release
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
     }
 
     compileOptions {
@@ -25,6 +48,26 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+def _BASENAME = "eqchartview";
+def _VERSION = "_v1.0.0";
+def _DestinationPath = "build"; //生成jar包的位置
+def zipFile = file('build/outputs/jars/release/classes.jar'); //待打包文件位置
+
+task deleteBuild(type:Delete){
+    delete _DestinationPath + _BASENAME + _VERSION + ".jar"
+}
+
+task makeJar(type:Jar){
+    from zipTree(zipFile)
+    from fileTree(dir:'src/main',includes:['assets/**']) //将assets目录打入jar包
+    baseName = _BASENAME + _VERSION
+    destinationDir = file(_DestinationPath)
+}
+
+makeJar.dependsOn(deleteBuild, build)
+
+
 
 tasks.withType(Javadoc) {
     options.addStringOption('Xdoclint:none', '-quiet')
