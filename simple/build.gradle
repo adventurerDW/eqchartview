@@ -29,6 +29,7 @@ android {
 
 dependencies {
     implementation project(':eqchart')
+
 //    implementation 'com.github.adventurerDW:eqchartview:1.0.0'
 
     implementation fileTree(include: ['*.aar'], dir: 'libs')
