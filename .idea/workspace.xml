@@ -22,12 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2960add1-5517-4332-8dd2-064b9a332c2e" name="Default Changelist" comment="2021年10月29日16:52:54  修复新点的问题、修复默认wrap宽高，图标不显示的问题 2">
+    <list default="true" id="2960add1-5517-4332-8dd2-064b9a332c2e" name="Default Changelist" comment="..">
       <change beforePath="$PROJECT_DIR$/.idea/modules/simple/eqchartview.simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/simple/eqchartview.simple.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eqchart/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eqchart/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eqchart/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/eqchart/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eqchart/proguard-rules.pro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/simple/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/simple/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/proguard-rules.pro" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +90,7 @@
     <property name="android-custom-viewC:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.github.adventurerDW/eqchartview/1.0.0/f4a0c9cf0769e00742588204003e9d1429463e10/eqchartview-1.0.0-sources.jar!/com/wenx/eqviews/EqChartView.java_SELECTED" value="EqChartView" />
     <property name="android-custom-viewC:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.github.adventurerDW/eqchartview/1.0.2/46d02b6487f285dffc55f493e40b1760f89cb86f/eqchartview-1.0.2-sources.jar!/com/wenx/eqviews/EqChartView.java_SELECTED" value="EqChartView" />
     <property name="android-custom-viewC:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.github.adventurerDW/eqchartview/1.0.2/46d02b6487f285dffc55f493e40b1760f89cb86f/eqchartview-1.0.2-sources.jar!/com/wenx/eqviews/SlideView.java_SELECTED" value="SlideView" />
+    <property name="android-custom-viewC:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.github.adventurerDW/eqchartview/1.0.3/804652bff72d96b05c6c8c80b6b974cd5afd5b20/eqchartview-1.0.3-sources.jar!/com/wenx/eqviews/EqChartView.java_SELECTED" value="EqChartView" />
     <property name="android-custom-viewE:/Android/Sdk/sources/android-29/android/view/ViewGroup.java_SELECTED" value="ViewGroup" />
     <property name="android-custom-viewE:/Android/Sdk/sources/android-29/android/widget/RelativeLayout.java_SELECTED" value="RelativeLayout" />
     <property name="android-custom-viewE:/mylibrary/github/eqchartview/eqchart/src/main/java/com/wenx/eqviews/EqChartView.java_SELECTED" value="EqChartView" />
@@ -225,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635500025616</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="..">
+      <created>1635502766468</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635502766468</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +255,8 @@
     <MESSAGE value="2021年10月29日10:56:19" />
     <MESSAGE value="2021年10月29日16:52:54  修复新点的问题、修复默认wrap宽高，图标不显示的问题" />
     <MESSAGE value="2021年10月29日16:52:54  修复新点的问题、修复默认wrap宽高，图标不显示的问题 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021年10月29日16:52:54  修复新点的问题、修复默认wrap宽高，图标不显示的问题 2" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
   <component name="WindowStateProjectService">
     <state x="484" y="286" key="#PSD" timestamp="1635473070229">
@@ -276,10 +287,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1635475416385" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1635500033820">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1635502775762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1635500033820" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1635502775762" />
     <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1635499280808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

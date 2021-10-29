@@ -13,9 +13,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
     }
-
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -30,7 +28,7 @@ android {
 dependencies {
     implementation project(':eqchart')
 
-//    implementation 'com.github.adventurerDW:eqchartview:1.0.2'
+//    implementation 'com.github.adventurerDW:eqchartview:1.0.3'
 
     implementation fileTree(include: ['*.aar'], dir: 'libs')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
