@@ -13,28 +13,9 @@
 -keepattributes Signature
 -keepattributes SourceFile,LineNumberTable
 #----------------------------------------------------------------------------
- 
-#---------------------------------默认保留区---------------------------------
--keep public class * extends android.app.Activity
--keep public class * extends android.app.Application
--keep public class * extends android.app.Service
--keep public class * extends android.content.BroadcastReceiver
--keep public class * extends android.content.ContentProvider
--keep public class * extends android.app.backup.BackupAgentHelper
--keep public class * extends android.preference.Preference
--keep public class * extends android.view.View
--keep class android.support.** {*;}
- 
--keepclasseswithmembernames class * {
-    native <methods>;
-}
--keepclassmembers class * extends android.app.Activity{
-    public void *(android.view.View);
-}
--keepclassmembers enum * {
-    public static **[] values();
-    public static ** valueOf(java.lang.String);
-}
+ -keep public class com.wenx.eqviews.EqChartView.*
+ -keep public class com.wenx.eqviews.SlideView.*
+
 -keep public class * extends android.view.View{
     *** get*();
     void set*(***);
