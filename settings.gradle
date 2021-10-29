@@ -1,3 +1,5 @@
 rootProject.name = "eqchartview"
 include ':simple'
 include ':eqchart'
+
+//maven { url "https://jitpack.io" }

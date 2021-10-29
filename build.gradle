@@ -6,10 +6,9 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        mavenLocal()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.2.1"
+        classpath "com.android.tools.build:gradle:4.2.2"
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
@@ -19,10 +18,19 @@ buildscript {
 
 allprojects {
     repositories {
+        flatDir {
+            dirs 'libs'
+        }
         google()
-        maven { url 'https://jitpack.io' }
-        mavenCentral();
-        mavenLocal()
+        mavenCentral()
+
+        maven { url "https://www.jitpack.io" }    // 这个可以
+//        maven { url "https://jitpack.io" }        // 这个不行
+//        maven { url "http://jitpack.io" }           // 这个可以
+
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url 'https://developer.huawei.com/repo/' }
     }
 }
 

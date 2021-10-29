@@ -17,14 +17,6 @@ android {
     }
 
 
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -37,6 +29,10 @@ android {
 
 dependencies {
     implementation project(':eqchart')
+//    implementation 'com.github.adventurerDW:eqchartview:1.0.0'
+
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
 
     implementation 'com.google.code.gson:gson:2.8.6'
 

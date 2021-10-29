@@ -106,64 +106,13 @@
         <com.wenx.eqviews.SlideView
             android:id="@+id/chart_view_1"
             android:layout_centerInParent="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bg_chartview_64"/>
-<!--        <com.wenxiong.eqviews.SlideView-->
-<!--            android:id="@+id/chart_view_2"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@drawable/bg_chartview_32"/>-->
-
-<!--        <com.wenxiong.eqviews.SlideView-->
-<!--            android:id="@+id/chart_view_3"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@drawable/bg_chartview_33"/>-->
-<!--        <com.wenxiong.eqviews.SlideView-->
-<!--            android:id="@+id/chart_view_4"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@drawable/bg_chartview_34"/>-->
-<!--        <com.wenxiong.eqviews.SlideView-->
-<!--            android:id="@+id/chart_view_5"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@drawable/bg_chartview_35"/>-->
-<!--        <com.wenxiong.eqviews.SlideView-->
-<!--            android:id="@+id/chart_view_6"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@drawable/bg_chartview_36"/>-->
-<!--        <com.wenxiong.eqviews.SlideView-->
-<!--            android:id="@+id/chart_view_7"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@drawable/bg_chartview_37"/>-->
-<!--        <com.wenxiong.eqviews.SlideView-->
-<!--            android:id="@+id/chart_view_8"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@drawable/bg_chartview_38"/>-->
-<!--        <com.wenxiong.eqviews.SlideView-->
-<!--            android:id="@+id/chart_view_9"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@drawable/bg_chartview_39"/>-->
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
         <com.wenx.eqviews.SlideView
             android:id="@+id/chart_view_10"
             android:layout_centerInParent="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bg_chartview_64"/>
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
     </com.wenx.eqviews.EqChartView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,6 @@ import android.graphics.PointF;
 import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.RelativeLayout;
 
@@ -205,22 +204,24 @@ public class EqChartView extends RelativeLayout {
     private int newPointIndex;
 
     public EqChartView(Context context) {
-        super(context);
+        this(context, null);
         init();
     }
 
     public EqChartView(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
         init();
     }
 
     public EqChartView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+
         TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.EqChartView);
         canvasCustom = array.getResourceId(R.styleable.EqChartView_canvas_custom, 0);
         canvasBg = array.getColor(R.styleable.EqChartView_canvas_custom, Color.GRAY);
         newPointImageId = array.getResourceId(R.styleable.EqChartView_points_new_bg, 0);
-        pointImageId = array.getResourceId(R.styleable.EqChartView_points_bg, 0);
+        pointImageId = array.getResourceId(R.styleable.EqChartView_points_bg, R.drawable.bg_chartview_64);
+        array.recycle();
 
         init();
 
@@ -308,11 +309,10 @@ public class EqChartView extends RelativeLayout {
         isSaveNewPointImg = isSave;
         newPointImageId = id;
         for (int i = 0; i < chartViews.size(); i++) {
-            if (newPointIndex==i) {
-                chartViews.get(newPointIndex).setBackgroundResource(newPointImageId == 0 ? pointImageId : newPointImageId);
-            }else {
-                chartViews.get(newPointIndex).setBackgroundResource(pointImageId == 0 ? R.drawable.bg_chartview_64 : pointImageId);
-            }
+            chartViews.get(i).setBackgroundResource(pointImageId);
+        }
+        if (newPointIndex != 0) {
+            chartViews.get(newPointIndex).setBackgroundResource(newPointImageId);
         }
     }
 
@@ -466,6 +466,11 @@ public class EqChartView extends RelativeLayout {
 
         if (chartViews.size() == 0 || points.size() == 0) {
             for (int i = 0; i < mPointCount; i++) {
+                if (getChildAt(i).getWidth() == 0 || getChildAt(i).getHeight() == 0) {
+                    getChildAt(i).setMinimumWidth((int) (getResources().getDisplayMetrics().density * 20.f));
+                    getChildAt(i).setMinimumHeight((int) (getResources().getDisplayMetrics().density * 20.f));
+                }
+                getChildAt(i).setBackgroundResource(pointImageId);
                 chartViews.add(i, (SlideView) getChildAt(i));
                 points.add(i, new PointF());
             }
@@ -596,7 +601,6 @@ public class EqChartView extends RelativeLayout {
             }
             float y = gs[i] > 0 ? yAxisY - (gains[i] / maxGain * yInterval_p2)
                     : yAxisY + (gains[i] / minGain * yInterval_p2);
-            Log.e("testtest", "数据转点 ---> x: " + x + "    y: " + y + "    min:" + minFreq + "  /  max:" + maxFreq);
             points.set(i, new PointF(x + (2.f * SPACE), y));
         }
         requestLayout();
@@ -640,8 +644,11 @@ public class EqChartView extends RelativeLayout {
 
     private void addItem(int index, int width, int height) {
         SlideView slideView = new SlideView(getContext());// 绕啊绕  气不气
-        slideView.setBackgroundResource(isSaveNewPointImg ? (newPointImageId == 0
-                ? R.drawable.bg_chartview_64 :newPointImageId) : R.drawable.bg_chartview_64);
+        if (isSaveNewPointImg) {
+            slideView.setBackgroundResource(newPointImageId == 0 ? R.drawable.bg_chartview_64 : newPointImageId);
+        } else {
+            slideView.setBackgroundResource(pointImageId);
+        }
         slideView.setLayoutParams(new RelativeLayout.LayoutParams(width, height));
         chartViews.add(index, slideView);
         newPointIndex = index;
