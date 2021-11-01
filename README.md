@@ -17,5 +17,5 @@ allprojects {
 
 # ..
 dependencies {
-    implementation 'com.github.adventurerDW:eqchartview:1.0.0'
+    implementation 'com.github.adventurerDW:eqchartview:TAG'
 }
